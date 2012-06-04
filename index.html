@@ -155,18 +155,19 @@
 			
 			<div class="slides">
 				<section>
-					<h2>Adding a Server-Side Backend to your JS-powered App</h2>
-					<h3 class="inverted">StackMob &amp; JavaScript</h3>
-					<p><span style="font-size: 24px;">(uses Backbone.js)</span></p>
-					<p style="margin-top: 100px;">
-						<p>Erick Tai | <a href="http://www.twitter.com/ericktai" target="_blank">@ericktai</a></p>
-						<p><a href="http://www.stackmob.com" target="_blank">stackmob.com</a> | <a href="http://www.twitter.com/stackmob">@stackmob</a></p><p><a href="">#stackmob #html5devconf</a></p>
-						<p>After Party @ StackMob 6PM: <a href="http://html5devconf.com/parties.html" target="_blank">http://html5devconf.com/parties.html</a></p>
+					<h2  style="margin-top: 50px;">StackMob</h2>
+					<h3 class="inverted" style="margin-top: 50px;">Building Your Backend <br>with JavaScript in Minutes</h3>
+			
+					<p style="margin-top: 50px;">
+						<p>Sidney Maestre | <a href="http://www.twitter.com/ericktai" target="_blank">@SidneyAllen</a></p>
+						<p><a href="http://www.stackmob.com" target="_blank">stackmob.com</a> | <a href="http://www.twitter.com/stackmob">@stackmob</a></p>
+						
 					</p>
 				</section>	
 					<section>
-						<h2>@ericktai</h2>
-						<h3>Erick Tai</h3>
+						<h2>Sidney Maestre</h2>
+						<h3>Platform Evangelist</h3>
+						<h4>sid@stackmob.com | @SidneyAllen</h4>
 						<p><a href="http://www.stackmob.com"><img src="../images/stackmob_logo.png"/></a></p>
 					</section>
 					<section>
@@ -185,57 +186,32 @@
 				  		<img src="../images/2ndgen.png"/>
 				  	</p>
 				  </section>			
-					<section>
-						<h2>Development: Today</h2>
-						<img src ="../images/3rdGen.png" alt="StackMob Diagram"/>
-					</section>
-					<section>
-						<h2>Development: Today continued</h2>
-						<p>
-								<p><img src="../images/f_logo.png"/>
-								<img src="../images/twitter_logo.png"/></p>
-						</p>
-					</section>
-					<section>
-						<h2>This.  But for you.</h2>
-						
-						<p>This isn't just for Facebook, Twitter, or the big guys.</p>
-						
-						<p>This is for you.</p>
-						
-						<p><img width="400px" src="../images/stackmob_logo.png"/></p>
-						
-					</section>
+				
+					
+				
+					
 					
 					<section>
-						<h2>Backend Services</h2>
-						<ul>
-							<li>User Authentication</li>
-							<li>Datastore</li>
-							<li>Security</li>
-							<li>GeoSpatial</li>
-							<li>Push</li>
-							<li>Hosting</li>
-							<li>Social Integration</li>
-							<li>Custom Server Side Code</li>
-							<li>Analytics</li>
-							<li>...</li>
-						</ul>
-					</section>
-
-					<section>
 						<section>
-							<h2>StackMob: Who are we?</h2>
-							
-							<ul>
-								<li>Mobile Backend Platform</li>
-								<li>Lowering barrier of entry</li>
-								<li>We handle backend so you can do frontend.</li>
-								<li>Giving everyone access to "big company" backend power</li>
-								<li>Develop. Scale. Analytics. Revisioning.</li>
-							</ul>
-							
+							<h2>Hello : StackMob</h2>
+							<img src ="../images/3rdGen.png" alt="StackMob Diagram"/>
 						</section>
+
+						<section>
+							<h2>Backend Services</h2>
+							<ul>
+								<li>User Authentication</li>
+								<li>Datastore</li>
+								<li>Geo Location</li>
+								<li>Push</li>
+								<li>Hosting</li>
+								<li>Facebook & Twitter</li>
+								<li>Custom Server Side Code</li>
+								<li>Analytics</li>
+								
+							</ul>
+						</section>
+
 						
 						<section>
 							<h2>StackMob: Investors</h2>
@@ -262,7 +238,7 @@
 								<li>Won Startup Weekend</li>
 								<li>Atari</li>
 							</ul>
-							<p>Games, Enterprise Apps, Social... </p>
+							<p style="margin-top:75px">Games, Enterprise Apps, Social... </p>
 							<p>iOS, Android, JavaScript, Ruby, PHP, Python, Java</p>
 						</section>
 						
@@ -317,39 +293,7 @@ http://static.stackmob.com/js/backbone-0.9.2-min.js
 http://static.stackmob.com/js/stackmob-js-0.2.1-min.js
 </code></pre>
 					</section>
-<!--										
-					<section>
-						<h2>Extended BackBone.js</h2>
-<pre><code class="brush: javascript">
-StackMob.Model = BackBone.Model.extend({
-	...
-	sync: function(method, model, options) { ... },
-	...
-});
 
-StackMob.Collection = BackBone.Collection.extend({
-	...
-}); 
-</code></pre>
-					</section>
-
-					<section>
-
-						<h2>Overrode sync method</h2>
-<pre><code class="brush: javascript;">
-StackMob.Model = BackBone.Model.extend({
-	...
-	sync: function(method, model, options) {
-		//Use AJAX to call StackMob's REST API
-		//Save/Fetch Data
-		//Authenticate users
-		//etc...
-	}
-	...
-});
-</code></pre>	
-					</section>
--->
 					
 					
 					
@@ -368,21 +312,7 @@ StackMob.init({
 					
 										
 					<section>
-						<section>
-						<h2>Server-Side Persistence: Create</h2>
-
-Syntax:
-
-<pre><code class="brush: javascript;">
-var td = new Todo({
-	action: 'Find clean underwear',
-	priority: 'low'
-});
-
-td.create(); //AJAX call to StackMob REST API
-</code></pre>
-
-						</section>
+					
 
 						<section>
 						<h2>Save to "todo" table</h2>
@@ -485,7 +415,7 @@ td.create({
 						<section>
 							<h2>Try Read by ID</h2>
 	
-	<p>var todo = new Todo({ todo_id: <input id="readitem" type="text" value=""/> });</p>
+	<p>var todo = new Todo({ todo_id: <input id="readitem" type="text" value="" style="width:100px"/> });</p>
 	<p>todo.fetch();</p>
 	
 	<p>
@@ -518,7 +448,7 @@ todo.save({ somethingnew: 'hi'}, callbacks);
 					</section>
 					<section>
 						<h2>Try Updating!</h2>
-	<p>var todo = new Todo({ todo_id: <input id="updateitem" type="text" value=""/> });</p>
+	<p>var todo = new Todo({ todo_id: <input id="updateitem" type="text" value="" style="width:100px"/> });</p>
 	<p>todo.save(</p>
 	
 	<p>
@@ -559,7 +489,7 @@ todo.destroy(callbacks);
 					</section>
 					<section>
 						<h2>Try Deleting!</h2>
-	<p>var todo = new Todo({ todo_id: <input id="deleteitem" type="text" value=""/> });</p>
+	<p>var todo = new Todo({ todo_id: <input id="deleteitem" type="text" value="" style="width:100px"/> });</p>
 	<p>todo.destroy();</p>
 	
 	<p><input id="delete" type="button" class="button" value="Delete Item"/></p>
@@ -715,20 +645,20 @@ var todo1 = new Todo({ action: 'take out the trash' });
 var todo2 = new Todo({ action: 'do the laundry' });
 var todo3 = new Todo({ action: 'prepare my slides!' });
 	
-var user = new StackMob.User({ username: 'ericktai' });
+var user = new StackMob.User({ username: 'SidneyAllen' });
 user.addRelationship('todos', [todo1, todo2, todo3], callbacks);
 </code></pre>						
 					</section>
 					
 					<section>
 						<h2>Let's try it.  But first..</h2>
-						<p>Let's see what "ericktai" looks like:</p>
+						<p>Let's see what "SidneyAllen" looks like:</p>
 						<textarea id="readuser"></textarea>
 						<p><input type="button" id="fetchuser" class="button" value="Fetch User"/></p>
 						<script type="text/javascript">
 								$(document).ready(function() {
 									$('#fetchuser').click(function() {
-										var user = new StackMob.User({ username: 'ericktai' });
+										var user = new StackMob.User({ username: 'SidneyAllen' });
 										user.fetch(SMDebug.callbacks('Fetch User', 'readuser'));
 									});
 								});
@@ -747,7 +677,7 @@ user.addRelationship('todos', [todo1, todo2, todo3], callbacks);
 										var todo2 = new Todo({ action: 'do the laundry' });
 										var todo3 = new Todo({ action: 'prepare my slides!' });
 											
-										var user = new StackMob.User({ username: 'ericktai' });
+										var user = new StackMob.User({ username: 'SidneyAllen' });
 										user.addRelationship('todos', [todo1, todo2, todo3], SMDebug.callbacks('Add Todos to User', 'addtodos'));
 									});
 								});
@@ -758,7 +688,7 @@ user.addRelationship('todos', [todo1, todo2, todo3], callbacks);
 <pre><code class="brush: javascript;">
 //Use StackMob.Model#fetchExpanded
 
-var user = new StackMob.User({ username: 'ericktai' });
+var user = new StackMob.User({ username: 'SidneyAllen' });
 user.fetchExpanded(1, callbacks);	
 </code></pre>						
 						<textarea id="readuserexpanded"></textarea>
@@ -766,7 +696,7 @@ user.fetchExpanded(1, callbacks);
 						<script type="text/javascript">
 								$(document).ready(function() {
 									$('#fetchuserexpanded').click(function() {
-										var user = new StackMob.User({ username: 'ericktai' });
+										var user = new StackMob.User({ username: 'SidneyAllen' });
 										user.fetchExpanded(1, SMDebug.callbacks('Fetch Expanded User', 'readuserexpanded'));
 									});
 								});
@@ -817,7 +747,7 @@ user.isLoggedIn(); //returns true;
 				<section>
 					
 					<section>
-						<h2>Even more flexibility: Custom Code</h2>
+						<h2>Flexibility: Custom Code</h2>
 						<ul>
 							<li>Java/Scala Server Side SDK</li>
 							<li>Write Code - StackMob REST-ifies it</li>
@@ -825,7 +755,6 @@ user.isLoggedIn(); //returns true;
 							<li>JS receives your custom JSON response too</li>
 						</ul>
 						
-						<p style="margin-top: 30px;">Or include us in NodeJS</p>
 					</section>
 					<section>
 						<h2>Call Custom Code from JS!</h2>
@@ -927,7 +856,7 @@ public class HelloWorldExample implements
 						
 						<ul>
 							<li>StackMob hosts your web files - no X-domain problems </li>
-							<li>Custom domains too - point your domain at StackMob via CNAME</li>
+					
 						</ul>
 					</section>		
 				</section>
@@ -936,8 +865,8 @@ public class HelloWorldExample implements
 					<h2>Hosting &amp; Custom Domains</h2>
 					<ul>
 						<li>Not just development platform</li>
-						<li>Host too! Even use your own domain: CNAME</li>
 						<li>Hosting <a href="https://www.stackmob.com/platform/account/html/settings" target="_blank">Integrated with GitHub</a></li>
+						<li>Point your domain to our servers</li>
 					</ul>
 				</section>
 				
@@ -985,14 +914,11 @@ public class HelloWorldExample implements
 					
 				
 				<section>
-					<h2>After Party!</h2>
-					<h3>541 8th st, SF, CA (8th and Bryant)</h3>
+					<h2>Questions</h2>
 					<ul>
-						<li>Free Food: Tacos</li>
-						<li>Free Drinks &amp; Beer</li>
-						<li>Come meet us and just hang out!</li>
+						<li>sid@stackmob.com</li>
+						<li>SidneyAllen</li>
 					</ul>
-					<p><a href="http://html5devconf.com/parties.html" target="_blank">http://html5devconf.com/parties.html</a></p>
 				</section>
 
 
