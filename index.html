@@ -188,9 +188,6 @@
 				  </section>			
 				
 					
-				
-					
-					
 					<section>
 						<section>
 							<h2>Hello : StackMob</h2>
@@ -678,7 +675,7 @@ user.addRelationship('todos', [todo1, todo2, todo3], callbacks);
 										var todo3 = new Todo({ action: 'prepare my slides!' });
 											
 										var user = new StackMob.User({ username: 'SidneyAllen' });
-										user.addRelationship('todos', [todo1, todo2, todo3], SMDebug.callbacks('Add Todos to User', 'addtodos'));
+										user.addRelationship('todo', [todo1, todo2, todo3], SMDebug.callbacks('Add Todos to User', 'addtodos'));
 									});
 								});
 						</script>	
@@ -759,7 +756,7 @@ user.isLoggedIn(); //returns true;
 					<section>
 						<h2>Call Custom Code from JS!</h2>
 <pre><code class="brush: javascript;">
-StackMob.customcode('helloworld', {
+StackMob.customcode('hello_world', {
 	success: function(result) {
 		console.debug(result.toJSON())
 		// Prints { msg: 'Hello World!' }
